@@ -61,7 +61,8 @@ class _HomePageState extends State<HomePage> {
                 var jsoneRespose =
                     jsonDecode(response.body) as Map<String, dynamic>;
                 chuckJoke.joke = jsoneRespose['value'];
-                chuckJoke.iconUrl = jsoneRespose['icon_url'];
+                chuckJoke.iconUrl =
+                    'https://api.chucknorris.io/img/chucknorris_logo_coloured_small.png';
               }
             });
             Navigator.pop(dialogContext);
